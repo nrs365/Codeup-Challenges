@@ -1,5 +1,6 @@
 <?php
 function palindrome_checker($string) {
+	$string = strtolower(str_replace(' ','',$string)); 
 	$stringReversed = strrev($string);
 	if ($stringReversed === $string) {
 		echo "{$string} is a palindrome!\n";
